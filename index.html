@@ -2,7 +2,10 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -15,26 +18,41 @@
 
   <link rel="stylesheet" href="css/screen.css">
 
+  <link href='http://fonts.googleapis.com/css?family=Enriqueta:400,700' rel='stylesheet' type='text/css'>
+
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script>window.html5 || document.write('<script src="html5shiv.js"><\/script>')</script>
   <![endif]-->
 </head>
+
 <body>
   <div class="container">
-    <div class="content">
-      <header role="banner">
+    <header role="banner" class="blog-header">
+      <div class="frame">
         <hgroup>
+          <img src="http://placekitten.com/100/100">
           <h1>Tom Spencer</h1>
           <h2>Web from the West Country.</h2>
         </hgroup>
-      </header>
-      <div id="main">
+        <nav class="blog-nav">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="blog-content-container frame">
+      <div id="main" class="blog-content">
         <article>
           <header>
-            <h1><a href="#">Testing and Tooling for Web Applications</a></h1>
+            <h1><a href="#">Testing and Tooling for Web Applications</a>
+            </h1>
             <p>
-              <time datetime="2013-02-12T08:35:00+00:00" pubdate="" data-updated="true">Feb 12<span>th</span>, 2013</time>
+              <time datetime="2013-02-12T08:35:00+00:00" pubdate="" data-updated="true">Feb 12
+                <span>th</span>, 2013</time>
             </p>
           </header>
           <div class="entry-content">
@@ -48,10 +66,14 @@
           </footer>
         </article>
         <footer role="contentinfo">
-          <p>Copyright © 2013 - Tom Spencer - <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span></p>
+          <p>Copyright © 2013 - Tom Spencer -
+            <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>
+            </span>
+          </p>
         </footer>
       </div>
     </div>
   </div>
 </body>
+
 </html>
