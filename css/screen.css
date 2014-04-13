@@ -445,12 +445,13 @@ body {
 
 /* line 6, ../sass/_typography.scss */
 h1 {
-  font-size: 2.5em;
+  font-size: 2.4em;
 }
 
 /* line 7, ../sass/_typography.scss */
 h2 {
-  font-size: 1.2em;
+  font-size: 1.3em;
+  line-height: 1.4em;
 }
 
 /* line 9, ../sass/_typography.scss */
@@ -466,36 +467,41 @@ p {
   box-sizing: border-box;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
+body {
+  background-color: #fefefe;
+}
+
+/* line 19, ../sass/screen.scss */
 .frame {
   max-width: 50em;
   margin: 0 auto;
   padding: 0 2em;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 .blog-header, .blog-footer {
   background-color: #2D79A1;
   color: #f7f7f7;
 }
-/* line 26, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 .blog-header a, .blog-footer a {
   color: #f7f7f7;
   text-decoration: none;
   border-bottom: 1px solid #f7f7f7;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 .blog-header {
   text-align: center;
   padding: 2em 0 1em 0;
 }
-/* line 36, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 .blog-header a {
   font-size: 1.2em;
 }
 
-/* line 41, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 .avatar {
   width: 150px;
   height: 150px;
@@ -507,26 +513,26 @@ p {
   border: 4px solid #f7f7f7;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .blog-links {
   margin-top: 2em;
 }
-/* line 50, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .blog-links ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 54, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .blog-links ul li {
   display: inline;
   padding: 1em;
 }
-/* line 57, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 .blog-links ul li a {
   border: 0;
 }
-/* line 59, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .blog-links ul li a img {
   border: 2px solid #fff;
   padding: 5px;
@@ -539,39 +545,40 @@ p {
   height: 50px;
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .blog-content {
   margin: 1em 0;
   color: #222;
 }
-/* line 74, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .blog-content time {
   color: #777;
   font-size: 0.8em;
 }
-/* line 78, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .blog-content a {
   color: #2D79A1;
   text-decoration: none;
   border-bottom: 1px solid #2D79A1;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .article-head a {
   font-size: 0.7em;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .blog-footer {
-  padding: 0.3em 0;
+  padding: 0.8em 0;
   text-align: right;
 }
-/* line 93, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .blog-footer p {
   font-size: 0.9em;
   color: #eee;
+  margin: 0;
 }
-/* line 97, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .blog-footer a {
   color: #eee;
   border-bottom-color: #eee;
@@ -583,3 +590,61 @@ p {
       padding: 1em;
   }
 } */
+@media (min-width: 60em) {
+  /* line 14, ../sass/_breaks.scss */
+  h1 {
+    font-size: 2.1em;
+  }
+
+  /* line 15, ../sass/_breaks.scss */
+  h2 {
+    font-size: 1.2em;
+  }
+
+  /* line 17, ../sass/_breaks.scss */
+  .blog-header, .blog-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 20em;
+  }
+
+  /* line 24, ../sass/_breaks.scss */
+  .blog-header {
+    top: 0;
+    z-index: 1;
+  }
+
+  /* line 29, ../sass/_breaks.scss */
+  .blog-footer {
+    z-index: 2;
+    text-align: left;
+    padding: 0 0 1em 0;
+  }
+
+  /* line 35, ../sass/_breaks.scss */
+  .blog-content-container {
+    margin-left: 20em;
+  }
+
+  /* line 39, ../sass/_breaks.scss */
+  .frame {
+    max-width: 99999999em;
+  }
+}
+@media (min-width: 90em) {
+  /* line 45, ../sass/_breaks.scss */
+  h1 {
+    font-size: 2.2em;
+  }
+
+  /* line 47, ../sass/_breaks.scss */
+  .blog-header, .blog-footer {
+    width: 25em;
+  }
+
+  /* line 51, ../sass/_breaks.scss */
+  .blog-content-container {
+    margin-left: 25em;
+  }
+}
