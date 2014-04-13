@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -439,412 +438,148 @@ th {
   padding: 0;
 }
 
-/*! 
-TYPEPLATE
-URL ........... http://typeplate.com
-VERSION ....... 1.1.3
-Github ........ https://github.com/typeplate/bower
-AUTHORS ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
-LICENSE ....... Creative Commmons Attribution 3.0 (http://creativecommons.org/licenses/by/3.0)
-LICENSE URL ... https://github.com/typeplate/bower/blob/master/license.txt
-*/
-@font-face {
-  font-family: "Ampersand";
-  src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
-  unicode-range: U+0026;
-}
-
-@font-face {
-  font-family: "Ampersand";
-  src: local("Georgia");
-  unicode-range: U+270C;
-}
-
-/* line 385, ../sass/_typeplate.scss */
+/* line 1, ../sass/_typography.scss */
 body {
-  word-wrap: break-word;
+  font-family: 'Merriweather', 'sans-serif';
 }
 
-/* line 389, ../sass/_typeplate.scss */
-pre code {
-  word-wrap: normal;
+/* line 6, ../sass/_typography.scss */
+h1 {
+  font-size: 2.5em;
 }
 
-/**
- * Dropcap Sass @include
- * Use the following Sass @include with any selector you feel necessary.
- *
-	@include dropcap($dropcap-float-position, $dropcap-font-size, $dropcap-font-family, $dropcap-txt-indent, $dropcap-margin, $dropcap-padding, $dropcap-color, $dropcap-line-height, $dropcap-bg);
- *
- * Extend this object into your custom stylesheet. Let the variables do the work.
- *
- */
-/* line 514, ../sass/_typeplate.scss */
-html {
-  font: normal 120%/1.65 serif;
+/* line 7, ../sass/_typography.scss */
+h2 {
+  font-size: 1.2em;
 }
 
-/* line 522, ../sass/_typeplate.scss */
-body {
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
-  color: #444444;
-}
-
-/* line 533, ../sass/_typeplate.scss */
-small {
-  font-size: 65%;
-}
-
-/* line 557, ../sass/_typeplate.scss */
-h1, h2, h3, h4, h5, h6 {
-  text-rendering: optimizeLegibility;
-  line-height: 1;
-  margin-top: 0;
-}
-
-/* line 572, ../sass/_typeplate.scss */
-.tera {
-  font-size: 117px;
-  font-size: 6.09375rem;
-  margin-bottom: 0.27077px;
-  margin-bottom: 0.27077rem;
-}
-
-/* line 572, ../sass/_typeplate.scss */
-.giga {
-  font-size: 90px;
-  font-size: 4.6875rem;
-  margin-bottom: 0.352px;
-  margin-bottom: 0.352rem;
-}
-
-/* line 572, ../sass/_typeplate.scss */
-.mega {
-  font-size: 72px;
-  font-size: 3.75rem;
-  margin-bottom: 0.44px;
-  margin-bottom: 0.44rem;
-}
-
-/* line 572, ../sass/_typeplate.scss */
-.alpha, h1 {
-  font-size: 60px;
-  font-size: 3.125rem;
-  margin-bottom: 0.528px;
-  margin-bottom: 0.528rem;
-}
-
-/* line 572, ../sass/_typeplate.scss */
-.beta, h2 {
-  font-size: 48px;
-  font-size: 2.5rem;
-  margin-bottom: 0.66px;
-  margin-bottom: 0.66rem;
-}
-
-/* line 572, ../sass/_typeplate.scss */
-.gamma, h3, .blog-content h1 {
-  font-size: 36px;
-  font-size: 1.875rem;
-  margin-bottom: 0.88px;
-  margin-bottom: 0.88rem;
-}
-
-/* line 572, ../sass/_typeplate.scss */
-.delta, h4 {
-  font-size: 24px;
-  font-size: 1.25rem;
-  margin-bottom: 1.32px;
-  margin-bottom: 1.32rem;
-}
-
-/* line 572, ../sass/_typeplate.scss */
-.epsilon, h5 {
-  font-size: 21px;
-  font-size: 1.09375rem;
-  margin-bottom: 1.50857px;
-  margin-bottom: 1.50857rem;
-}
-
-/* line 572, ../sass/_typeplate.scss */
-.zeta, h6 {
-  font-size: 18px;
-  font-size: 0.9375rem;
-  margin-bottom: 1.76px;
-  margin-bottom: 1.76rem;
-}
-
-/* line 612, ../sass/_typeplate.scss */
+/* line 9, ../sass/_typography.scss */
 p {
-  margin: auto auto 0.8em;
+  line-height: 1.6em;
+  font-size: 1.3em;
 }
 
-/* line 642, ../sass/_typeplate.scss */
-abbr,
-acronym,
-blockquote,
-code,
-dir,
-kbd,
-listing,
-plaintext,
-q,
-samp,
-tt,
-var,
-xmp {
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  -o-hyphens: none;
-  hyphens: none;
-}
-
-/* line 650, ../sass/_typeplate.scss */
-pre code {
-  white-space: -moz-pre-wrap;
-  white-space: pre-wrap;
-}
-
-/* line 655, ../sass/_typeplate.scss */
-pre {
-  white-space: pre;
-}
-
-/* line 659, ../sass/_typeplate.scss */
-code {
-  white-space: pre;
-  font-family: monospace;
-}
-
-/**
- * Abbreviations Markup
- *
-	<abbr title="hyper text markup language">HMTL</abbr>
- *
- * Extend this object into your markup.
- *
- */
-/* line 675, ../sass/_typeplate.scss */
-abbr {
-  font-variant: small-caps;
-  font-weight: 600;
-  text-transform: lowercase;
-  color: gray;
-}
-/* line 677, ../sass/_typeplate.scss */
-abbr[title]:hover {
-  cursor: help;
-}
-
-/* line 691, ../sass/_typeplate.scss */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #222222;
-}
-
-/* line 701, ../sass/_typeplate.scss */
-p + .drop-cap {
-  text-indent: 0;
-  margin-top: 0;
-}
-
-/* line 416, ../sass/_typeplate.scss */
-.drop-cap:first-letter {
-  float: left;
-  margin: inherit;
-  padding: inherit;
-  font-size: 4em;
-  font-family: inherit;
-  line-height: 1;
-  text-indent: 0;
-  background: transparent;
-  color: inherit;
-}
-
-/**
- * Lining Definition Style Markup
- *
-	<dl class="lining">
-		<dt><b></b></dt>
-		<dd></dd>
-	</dl>
- *
- * Extend this object into your markup.
- *
- */
-/* line 455, ../sass/_typeplate.scss */
-.lining dt,
-.lining dd {
-  display: inline;
-  margin: 0;
-}
-/* line 462, ../sass/_typeplate.scss */
-.lining dt + dt:before,
-.lining dd + dt:before {
-  content: "\A";
-  white-space: pre;
-}
-/* line 470, ../sass/_typeplate.scss */
-.lining dd + dd:before {
-  content: ", ";
-}
-/* line 474, ../sass/_typeplate.scss */
-.lining dd:before {
-  content: ": ";
-  margin-left: -0.2rem;
-}
-
-/**
- * Dictionary Definition Style Markup
- *
-	<dl class="dictionary-style">
-		<dt><b></b></dt>
-			<dd></dd>
-	</dl>
- *
- * Extend this object into your markup.
- *
- */
-/* line 482, ../sass/_typeplate.scss */
-.dictionary-style dt {
-  display: inline;
-  counter-reset: definitions;
-}
-/* line 486, ../sass/_typeplate.scss */
-.dictionary-style dt + dt:before {
-  content: ", ";
-  margin-left: -0.2rem;
-}
-/* line 492, ../sass/_typeplate.scss */
-.dictionary-style dd {
-  display: block;
-  counter-increment: definitions;
-}
-/* line 495, ../sass/_typeplate.scss */
-.dictionary-style dd:before {
-  content: counter(definitions,decimal) ". ";
-}
-
-/**
- * Blockquote Markup
- *
-		<figure>
-			<blockquote cite="">
-				<p></p>
-			</blockquote>
-			<figcaption>
-				<cite>
-					<small><a href=""></a></small>
-				</cite>
-			</figcaption>
-		</figure>
- *
- * Extend this object into your markup.
- *
- */
-/**
- * Pull Quotes Markup
- *
-	<aside class="pull-quote">
-		<blockquote>
-			<p></p>
-		</blockquote>
-	</aside>
- *
- * Extend this object into your custom stylesheet.
- *
- */
-/* line 785, ../sass/_typeplate.scss */
-.pull-quote {
-  position: relative;
-  padding: 1em;
-}
-/* line 357, ../sass/_typeplate.scss */
-.pull-quote:before, .pull-quote:after {
-  height: 1em;
-  opacity: 0.5;
-  position: absolute;
-  font-size: 4em;
-  color: #dc976e;
-}
-/* line 364, ../sass/_typeplate.scss */
-.pull-quote:before {
-  content: '“';
-  top: 0;
-  left: 0;
-}
-/* line 369, ../sass/_typeplate.scss */
-.pull-quote:after {
-  content: '”';
-  bottom: 0;
-  right: 0;
-}
-
-/**
- * Figures Markup
- *
-	<figure>
-		<figcaption>
-			<strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
-		</figcaption>
-	</figure>
- *
- * Extend this object into your markup.
- *
- */
-/**
- * Footnote Markup : Replace 'X' with your unique number for each footnote
- *
-	<article>
-		<p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
-		<footer>
-			<ol class="foot-notes">
-				<li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
-			</ol>
-		</footer>
-	</article>
- *
- * Extend this object into your markup.
- *
- */
-/* line 12, ../sass/screen.scss */
+/* line 11, ../sass/screen.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 .frame {
   max-width: 50em;
   margin: 0 auto;
   padding: 0 2em;
 }
 
-/* line 24, ../sass/screen.scss */
-.blog-header {
-  text-align: center;
-  background-color: #777;
-  padding: 2em 0;
+/* line 23, ../sass/screen.scss */
+.blog-header, .blog-footer {
+  background-color: #2D79A1;
+  color: #f7f7f7;
+}
+/* line 26, ../sass/screen.scss */
+.blog-header a, .blog-footer a {
+  color: #f7f7f7;
+  text-decoration: none;
+  border-bottom: 1px solid #f7f7f7;
 }
 
-/* line 30, ../sass/screen.scss */
-.blog-nav > ul {
+/* line 33, ../sass/screen.scss */
+.blog-header {
+  text-align: center;
+  padding: 2em 0 1em 0;
+}
+/* line 36, ../sass/screen.scss */
+.blog-header a {
+  font-size: 1.2em;
+}
+
+/* line 41, ../sass/screen.scss */
+.avatar {
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  -ms-border-radius: 75px;
+  -o-border-radius: 75px;
+  border-radius: 75px;
+  border: 4px solid #f7f7f7;
+}
+
+/* line 48, ../sass/screen.scss */
+.blog-links {
+  margin-top: 2em;
+}
+/* line 50, ../sass/screen.scss */
+.blog-links ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 34, ../sass/screen.scss */
-.blog-nav > ul li {
+/* line 54, ../sass/screen.scss */
+.blog-links ul li {
   display: inline;
   padding: 1em;
 }
+/* line 57, ../sass/screen.scss */
+.blog-links ul li a {
+  border: 0;
+}
+/* line 59, ../sass/screen.scss */
+.blog-links ul li a img {
+  border: 2px solid #fff;
+  padding: 5px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  width: 50px;
+  height: 50px;
+}
+
+/* line 71, ../sass/screen.scss */
+.blog-content {
+  margin: 1em 0;
+  color: #222;
+}
+/* line 74, ../sass/screen.scss */
+.blog-content time {
+  color: #777;
+  font-size: 0.8em;
+}
+/* line 78, ../sass/screen.scss */
+.blog-content a {
+  color: #2D79A1;
+  text-decoration: none;
+  border-bottom: 1px solid #2D79A1;
+}
+
+/* line 85, ../sass/screen.scss */
+.article-head a {
+  font-size: 0.7em;
+}
+
+/* line 90, ../sass/screen.scss */
+.blog-footer {
+  padding: 0.3em 0;
+  text-align: right;
+}
+/* line 93, ../sass/screen.scss */
+.blog-footer p {
+  font-size: 0.9em;
+  color: #eee;
+}
+/* line 97, ../sass/screen.scss */
+.blog-footer a {
+  color: #eee;
+  border-bottom-color: #eee;
+}
+
+/* @media(min-width: 22em) {
+  .blog-nav ul li {
+      display: inline-block;
+      padding: 1em;
+  }
+} */

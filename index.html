@@ -18,8 +18,7 @@
 
   <link rel="stylesheet" href="css/screen.css">
 
-  <link href='http://fonts.googleapis.com/css?family=Enriqueta:400,700' rel='stylesheet' type='text/css'>
-
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script>window.html5 || document.write('<script src="html5shiv.js"><\/script>')</script>
@@ -31,28 +30,34 @@
     <header role="banner" class="blog-header">
       <div class="frame">
         <hgroup>
-          <img src="http://placekitten.com/100/100">
-          <h1>Tom Spencer</h1>
-          <h2>Web from the West Country.</h2>
+          <img class="avatar" src="http://gravatar.com/avatar/63ec2b20377ebdb4c0432bd5116d1270?s=150">
+          <h1>West Country Web</h1>
+          <h2>Thoughts on all things web from Bristol, UK.</h2>
         </hgroup>
-        <nav class="blog-nav">
+        <!-- <nav class="blog-nav">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Blog</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
           </ul>
-        </nav>
+        </nav> -->
+        <div class="blog-links">
+          <ul>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+            <li><a href="#"><img src="img/github.png"></a></li>
+            <li><a href="#"><img src="img/linkedin.png"></a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <div class="blog-content-container frame">
       <div id="main" class="blog-content">
         <article>
           <header>
-            <h1><a href="#">Testing and Tooling for Web Applications</a>
+            <h1 class="article-head"><a href="#">Testing and Tooling for Web Applications</a>
             </h1>
             <p>
-              <time datetime="2013-02-12T08:35:00+00:00" pubdate="" data-updated="true">Feb 12
-                <span>th</span>, 2013</time>
+              <time datetime="2013-02-12T08:35:00+00:00" pubdate="" data-updated="true">Feb 12th, 2013</time>
             </p>
           </header>
           <div class="entry-content">
@@ -65,14 +70,16 @@
             <a rel="full-article" href="/blog/2013/02/12/tooling-for-web-apps/">Read on →</a>
           </footer>
         </article>
-        <footer role="contentinfo">
-          <p>Copyright © 2013 - Tom Spencer -
-            <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>
-            </span>
-          </p>
-        </footer>
       </div>
     </div>
+    <footer class="blog-footer" role="contentinfo">
+      <div class="frame">
+        <p>Copyright © 2013 - Tom Spencer -
+          <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>
+          </span>
+        </p>
+      </div>
+    </footer>
   </div>
 </body>
 

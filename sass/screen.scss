@@ -3,17 +3,16 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/css3/box-sizing";
+@import "compass/css3";
 
 @import "normalize";
-@import "vars-typeplate";
-@import "typeplate";
+@import "typography";
 
 * {
   @include box-sizing(border-box);
 }
 
-// Typography
+
 
 .frame {
   max-width: 50em;
@@ -21,28 +20,86 @@
   padding: 0 2em
 }
 
-.blog-header {
-  text-align: center;
-  background-color: #777;
-  padding: 2em 0;
+.blog-header, .blog-footer {
+  background-color: #2D79A1;
+  color: #f7f7f7;
+  a {
+    color: #f7f7f7;
+    text-decoration: none;
+    border-bottom: 1px solid #f7f7f7;
+  }
 }
 
-.blog-nav > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  li {
-    display: inline;
-    padding: 1em;
+.blog-header {
+  text-align: center;
+  padding: 2em 0 1em 0;
+  a {
+    font-size: 1.2em;
+  }
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  @include border-radius(75px);
+  border: 4px solid #f7f7f7;
+}
+
+.blog-links {
+  margin-top: 2em;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline;
+      padding: 1em;
+      a {
+        border: 0;
+        img {
+          border: 2px solid #fff;
+          padding: 5px;
+          @include border-radius(4px);
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
   }
 }
 
 .blog-content {
-  h1 {
-    @extend .gamma;
+  margin: 1em 0;
+  color: #222;
+  time {
+    color: #777;
+    font-size: 0.8em;
+  }
+  a {
+    color: #2D79A1;
+    text-decoration: none;
+    border-bottom: 1px solid #2D79A1;
   }
 }
 
+.article-head a {
+  font-size: 0.7em;
+}
 
+
+.blog-footer {
+  padding: 0.3em 0;
+  text-align: right;
+  p {
+    font-size: 0.9em;
+    color: #eee;
+  }
+  a {
+    color: #eee;
+    border-bottom-color: #eee;
+  }
+}
+
+@import "breaks";
 
 
